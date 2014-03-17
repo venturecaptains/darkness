@@ -9,6 +9,9 @@
         display: inline-block; 
         position: relative;
       }
+      .sources-title {
+        margin-bottom: -22px;
+      }
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -28,7 +31,7 @@
           <h1>Current Light</h1>
           <div class='current-level ui-bar ui-bar-b'>Darkness</div>
         </div>
-        <div class='ui-grid-a'>
+        <div class='sources-title ui-grid-a'>
           <div class='ui-block-a'>
             <h3>Active Sources</h3>
           </div>
@@ -36,7 +39,7 @@
             <a style='height: 61px;' class="no-btn ui-icon-plus ui-btn-inline ui-btn-icon-notext"></a>
           </div>
         </div>
-        <ul class='ui-listview' data-role='listview'>
+        <ul class='ui-listview' data-inset=true data-role='listview'>
           <li><a>Torch</a></li>
           <li><a>Light (Level 1)</a></li>
         </ul>

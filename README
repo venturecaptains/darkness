@@ -8,3 +8,5 @@ First, make sure you can install [jasmine-headless-webkit](http://johnbintz.gith
 
 Next, install the ruby version listed in .ruby-version. Install the gems listed in darkness.gems [You can use RVM for this]().
 
+You can have your browser automatically reload the page when it changes by installing the [Chrome LiveReload Extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en)
+
