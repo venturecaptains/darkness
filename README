@@ -6,5 +6,5 @@ We do Test Driven Development here. If you don't know how to do that, ask Ben an
 
 First, make sure you can install [jasmine-headless-webkit](http://johnbintz.github.io/jasmine-headless-webkit). If you have all the dependencies, installing the project gems should just work. If you are missing some dependencies, it probably won't work.
 
-Next, install the ruby version and gems listed in .ruby-version and .ruby-gemset. [You can use RVM for this]().
+Next, install the ruby version listed in .ruby-version. Install the gems listed in darkness.gems [You can use RVM for this]().
 

@@ -20,3 +20,6 @@ guard 'jasmine-headless-webkit' do
   watch(%r{^(spec/javascripts/.*\.js)}) { |m| m }
 end
 
+guard 'livereload' do
+  watch(%r{public/.+\.(css|js|html)})
+end
