@@ -4,9 +4,16 @@ Lightness/Darkness calculator for venturecaptains.com
 
 We do Test Driven Development here. If you don't know how to do that, ask Ben and he'll help you.
 
-First, make sure you can install [jasmine-headless-webkit](http://johnbintz.github.io/jasmine-headless-webkit). If you have all the dependencies, installing the project gems should just work. If you are missing some dependencies, it probably won't work.
+First, install QT (using Homebrew, MacPorts or your favorite package manager)
 
-Next, install the ruby version listed in .ruby-version. Install the gems listed in darkness.gems [You can use RVM for this]().
+$ sudo port install qt4-mac
+
+OR
+
+$ brew install qt
+
+Next, install the ruby version listed in .ruby-version. Install the gems listed in darkness.gems [You can use RVM for this](http://rvm.io/gemsets/importing).
 
 You can have your browser automatically reload the page when it changes by installing the [Chrome LiveReload Extension](https://chrome.google.com/webstore/detail/livereload/jnihajbhpnppcggbcgedagnkighmdlei?hl=en)
 
+Run guard using `guard`. It should hopefully run some tests.
