@@ -25,6 +25,9 @@ function addSources(sourceList) {
 }
 
 function darknessReady() {
-  $.getJSON('data/sources.json').done(addSources);
+  // FIXME Not sure why JQuery tries to do this twice!
+  if ($('#light-sources option').length === 0) {
+    $.getJSON('data/sources.json').done(addSources);
+  }
   $('#light-sources').change(sourceChange);
 }
