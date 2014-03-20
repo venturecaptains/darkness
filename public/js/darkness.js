@@ -25,9 +25,10 @@ function addSources(sourceList) {
 }
 
 function darknessReady() {
-  // FIXME Not sure why JQuery tries to do this twice!
-  if ($('#light-sources option').length === 0) {
-    $.getJSON('data/sources.json').done(addSources);
+  if (jQuery.mobile.path.get() === 'source') {
+    if ($('#light-sources option').length === 0) {
+      $.getJSON('data/sources.json').done(addSources);
+    }
+    $('#light-sources').change(sourceChange);
   }
-  $('#light-sources').change(sourceChange);
 }
