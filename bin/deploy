@@ -2,8 +2,8 @@
 root_dir=`dirname $0`/..
 
 defaults="--acl-public --exclude=.DS_Store"
-bucket=s3://darkness.venturecaptains.com
 cd $root_dir
+bucket=s3://`basename $PWD`.venturecaptains.com
 
 echo "Deploying site to $bucket"
 s3cmd sync --no-preserve $defaults public/* $bucket/

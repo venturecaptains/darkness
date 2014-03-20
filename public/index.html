@@ -2,16 +2,13 @@
 <html class='ui-mobile'>
   <head>
     <style type='text/css'>
-      .current-level {
-        text-align: center;
-      }
+      .sources-title { margin-bottom: -22px; }
       .no-btn {
         display: inline-block; 
         position: relative;
       }
-      .sources-title {
-        margin-bottom: -22px;
-      }
+      .center { text-align: center; }
+      .width-40 { width: 40%; }
     </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,29 +19,55 @@
     <link rel="shortcut icon" href="favicon.ico">
     <script src="js/jquery.js"></script>
     <script src="js/jquery.mobile-1.4.2.min.js"></script>
-    <script src="js/diceroller.js"></script>
   </head>
   <body>
-    <div data-role="page">
+
+    <div data-role="page" id="main">
       <div role="main" class="ui-content">
         <div data-role="header">
           <h1>Current Light</h1>
-          <div class='current-level ui-bar ui-bar-b'>Darkness</div>
+          <div class='center ui-bar ui-bar-b'>Darkness</div>
         </div>
         <div class='sources-title ui-grid-a'>
           <div class='ui-block-a'>
             <h3>Active Sources</h3>
           </div>
           <div class='ui-block-b'>
-            <a style='height: 61px;' class="no-btn ui-icon-plus ui-btn-inline ui-btn-icon-notext"></a>
+            <a style='height: 61px;' href='#source' class="no-btn ui-icon-plus ui-btn-inline ui-btn-icon-notext"></a>
           </div>
         </div>
         <ul class='ui-listview' data-inset=true data-role='listview'>
-          <li><a>Torch</a></li>
-          <li><a>Light (Level 1)</a></li>
+          <li><a href='#source'>Torch</a></li>
+          <li><a href='#source'>Light (Level 1)</a></li>
         </ul>
       </div>
     </div>
+
+    <div data-role='page' id='source'>
+      <div data-role="header">
+        <h1>New Source</h1>
+      </div>
+      <div role="main" class="ui-content">
+        <div class="ui-field-contain">
+          <div>
+            <label for="light-sources" class="select">Source:</label>
+            <select name="light-sources" id="light-sources">
+            </select>
+          </div>
+          <div style='display: none;' class='magic-control ui-field-contain'>
+            <label for="spell-level" class="select">Spell Level:</label>
+            <input type="range" name="spell-level" id="spell-level" value="0" min="0" max="10">
+          </div>
+        </div>
+      </div>
+      <div data-role="footer" data-position='fixed'>
+        <fieldset class="action-buttons ui-grid-a">
+          <div class="ui-block-a"><button data-theme="a">Cancel</button></div>
+          <div class="ui-block-b"><button data-theme="b">Save</button></div>
+        </fieldset>
+      </div>
+    </div>
+    <script src="js/darkness.js"></script>
     <script type='text/javascript'>
       $(document).on('pageinit', darknessReady);
     </script>

@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Light",
+    "spellLevel": 0,
+    "lightLevel": 1
+  },
+  {
+    "name": "Daylight",
+    "spellLevel": 3,
+    "lightLevel": 2
+  },
+  {
+    "name": "Continual Flame (Arcane)",
+    "spellLevel": 2,
+    "lightLevel": 1
+  },
+  {
+    "name": "Continual Flame (Divine)",
+    "spellLevel": 3,
+    "lightLevel": 1
+  },
+  {
+    "name": "Darkness",
+    "spellLevel": 2,
+    "lightLevel": -1
+  },
+  {
+    "name": "Deeper Darkness",
+    "spellLevel": 2,
+    "lightLevel": -1
+  },
+  {
+    "name": "Ioun Torch",
+    "spellLevel": 2,
+    "lightLevel": 1
+  },
+  {
+    "name": "Torch",
+    "lightLevel": 1
+  },
+  {
+    "name": "Candle",
+    "lightLevel": 1
+  },
+  {
+    "name": "Sunrod",
+    "lightLevel": 1
+  },
+  {
+    "name": "Hooded Lantern",
+    "lightLevel": 1
+  },
+  {
+    "name": "Bullseye Lantern",
+    "lightLevel": 1
+  },
+  {
+    "name": "Darklight Lantern",
+    "lightLevel": -1
+  },
+  {
+    "name": "Shadowcloy Flask",
+    "lightLevel": -1
+  }
+]

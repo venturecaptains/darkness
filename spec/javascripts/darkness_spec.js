@@ -1,5 +1,6 @@
 describe('Darkness', function() {
-  it('calculates a light level', function() {
-    expect(1).toEqual(2);
+  it('adds sources from a list', function() {
+    addSources([{name: "one", lightlevel: 1}]);
+    expect($('#light-sources option[value=one]')).toExist();
   });
 });
