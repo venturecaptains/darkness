@@ -25,10 +25,8 @@ function addSources(sourceList) {
 }
 
 function darknessReady() {
-  if (jQuery.mobile.path.get() === 'source') {
-    $('#light-sources').change(sourceChange);
-    if ($('#light-sources option').length === 0) {
-      $.getJSON('data/sources.json').done(addSources);
-    }
+  $('#light-sources').change(sourceChange);
+  if ($('#light-sources option').length === 0) {
+    $.getJSON('data/sources.json').done(addSources);
   }
 }
