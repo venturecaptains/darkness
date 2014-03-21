@@ -2,64 +2,101 @@
   {
     "name": "Light",
     "spellLevel": 0,
-    "lightLevel": 1
+    "effects": {
+      "20": "normal",
+      "40": "increase"
+    }
   },
   {
     "name": "Daylight",
     "spellLevel": 3,
-    "lightLevel": 2
+    "effects": {
+      "60": "daylight",
+      "120": "increase"
+    }
   },
   {
     "name": "Continual Flame (Arcane)",
     "spellLevel": 2,
-    "lightLevel": 1
+    "effects": {
+      "20": "normal",
+      "40": "increase"
+    }
   },
   {
     "name": "Continual Flame (Divine)",
     "spellLevel": 3,
-    "lightLevel": 1
+    "effects": {
+      "20": "normal",
+      "40": "increase"
+    }
   },
   {
     "name": "Darkness",
     "spellLevel": 2,
-    "lightLevel": -1
+    "effects": {
+      "20": "darkness"
+    }
   },
   {
     "name": "Deeper Darkness",
     "spellLevel": 2,
-    "lightLevel": -1
+    "effects": {
+      "60": "deeper"
+    }
   },
   {
     "name": "Ioun Torch",
     "spellLevel": 2,
-    "lightLevel": 1
+    "effects": {
+      "20": "light",
+      "40": "increase"
+    }
   },
   {
     "name": "Torch",
-    "lightLevel": 1
+    "effects": {
+      "20": "torch",
+      "40": "increase"
+    }
   },
   {
     "name": "Candle",
-    "lightLevel": 1
+    "effects": {
+      "5": "increase"
+    }
   },
   {
     "name": "Sunrod",
-    "lightLevel": 1
+    "effects": {
+      "30": "torch",
+      "60": "increase"
+    }
   },
   {
     "name": "Hooded Lantern",
-    "lightLevel": 1
+    "effects": {
+      "30": "torch",
+      "60": "increase"
+    }
   },
   {
     "name": "Bullseye Lantern",
-    "lightLevel": 1
+    "effects": {
+      "60": "torch",
+      "60": "increase"
+    }
   },
   {
     "name": "Darklight Lantern",
-    "lightLevel": -1
+    "effects": {
+      "30": "decrease"
+    }
   },
   {
     "name": "Shadowcloy Flask",
-    "lightLevel": -1
+    "effects": {
+      "0": "decrease"
+    }
   }
 ]
