@@ -3,7 +3,7 @@
     "name": "Light",
     "spellLevel": 0,
     "effects": {
-      "20": "normal",
+      "20": "light",
       "40": "increase"
     }
   },
@@ -19,7 +19,7 @@
     "name": "Continual Flame (Arcane)",
     "spellLevel": 2,
     "effects": {
-      "20": "normal",
+      "20": "light",
       "40": "increase"
     }
   },
@@ -27,7 +27,7 @@
     "name": "Continual Flame (Divine)",
     "spellLevel": 3,
     "effects": {
-      "20": "normal",
+      "20": "light",
       "40": "increase"
     }
   },
